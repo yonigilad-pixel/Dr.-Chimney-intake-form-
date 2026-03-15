@@ -1,221 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Chimney - Chimney & Fireplace Service Intake Form</title>
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      background:#f4f6f9;
-      margin:0;
-      padding:20px;
-      color:#222;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Chimney - Service Intake Form</title>
 
-    .container{
-      max-width:720px;
-      margin:0 auto;
-      background:#fff;
-      border-radius:12px;
-      padding:28px;
-      box-shadow:0 4px 18px rgba(0,0,0,0.08);
-    }
+<style>
 
-    .brand{
-      text-align:center;
-      margin-bottom:10px;
-    }
+body{
+font-family: Arial, sans-serif;
+background:#f4f6f9;
+margin:0;
+padding:20px;
+}
 
-    .brand h1{
-      margin:0;
-      font-size:34px;
-      color:#123b7a;
-    }
+.container{
+max-width:720px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 16px rgba(0,0,0,0.08);
+}
 
-    .brand h2{
-      margin:10px 0 0;
-      font-size:28px;
-      color:#123b7a;
-      line-height:1.2;
-    }
+.logo{
+display:block;
+margin:auto;
+max-width:220px;
+margin-bottom:15px;
+}
 
-    .subtitle{
-      text-align:center;
-      color:#666;
-      margin:14px 0 28px;
-      font-size:17px;
-      line-height:1.5;
-    }
+h1{
+text-align:center;
+color:#123b7a;
+margin-bottom:5px;
+}
 
-    label{
-      display:block;
-      margin-top:16px;
-      font-weight:bold;
-    }
+.subtitle{
+text-align:center;
+color:#666;
+margin-bottom:25px;
+}
 
-    input, select, textarea{
-      width:100%;
-      padding:12px;
-      margin-top:6px;
-      border:1px solid #cfcfcf;
-      border-radius:8px;
-      font-size:16px;
-      box-sizing:border-box;
-      background:#fff;
-    }
+label{
+display:block;
+margin-top:16px;
+font-weight:bold;
+}
 
-    textarea{
-      resize:vertical;
-      min-height:90px;
-    }
+input,select,textarea{
+width:100%;
+padding:12px;
+margin-top:6px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+box-sizing:border-box;
+}
 
-    .hidden{
-      display:none;
-    }
+textarea{
+resize:vertical;
+}
 
-    button{
-      width:100%;
-      margin-top:28px;
-      padding:16px;
-      font-size:18px;
-      font-weight:bold;
-      color:#fff;
-      background:#123b7a;
-      border:none;
-      border-radius:8px;
-      cursor:pointer;
-    }
+.hidden{
+display:none;
+}
 
-    button:hover{
-      background:#0f2f63;
-    }
+button{
+width:100%;
+margin-top:28px;
+padding:16px;
+font-size:18px;
+font-weight:bold;
+color:white;
+background:#123b7a;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
 
-    .note{
-      text-align:center;
-      color:#666;
-      font-size:13px;
-      margin-top:18px;
-      line-height:1.5;
-    }
+button:hover{
+background:#0f2f63;
+}
 
-    @media (max-width: 600px){
-      .container{
-        padding:20px;
-      }
+</style>
 
-      .brand h1{
-        font-size:30px;
-      }
-
-      .brand h2{
-        font-size:24px;
-      }
-
-      .subtitle{
-        font-size:16px;
-      }
-    }
-  </style>
 </head>
+
 <body>
-  <div class="container">
 
-    <div class="brand">
-      <h1>Dr. Chimney</h1>
-      <h2>Chimney & Fireplace Service Intake Form</h2>
-    </div>
+<div class="container">
 
-    <p class="subtitle">
-      Please complete this form before your appointment so we can prepare for your chimney or fireplace service visit.
-    </p>
+<img src="drchimney-logo.png" class="logo">
 
-    <form action="https://formsubmit.co/eitangonen942@gmail.com" method="POST">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_subject" value="New Dr. Chimney Service Intake Form">
+<h1>Dr. Chimney</h1>
 
-      <label for="fullName">Full Name</label>
-      <input type="text" id="fullName" name="Full Name" required>
+<p class="subtitle">
+Chimney & Fireplace Service Intake Form<br>
+Please complete this form before your appointment.
+</p>
 
-      <label for="date">Date</label>
-      <input type="date" id="date" name="Date">
+<form action="https://formsubmit.co/eitangonen942@gmail.com" method="POST">
 
-      <label for="address">Address</label>
-      <input type="text" id="address" name="Address">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Dr Chimney Intake Form">
 
-      <label for="phone">Phone</label>
-      <input type="tel" id="phone" name="Phone">
+<label>Full Name</label>
+<input type="text" name="Full Name" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="Customer Email">
+<label>Date</label>
+<input type="date" name="Date">
 
-      <label for="issue">1. What issue are you experiencing with the fireplace?</label>
-      <select id="issue" name="Issue" onchange="toggleOtherIssue()">
-        <option value="Fireplace not turning on">Fireplace not turning on</option>
-        <option value="Weak or uneven flame">Weak or uneven flame</option>
-        <option value="Gas smell">Gas smell</option>
-        <option value="Strange noise from fireplace">Strange noise from fireplace</option>
-        <option value="Other">Other</option>
-      </select>
+<label>Address</label>
+<input type="text" name="Address">
 
-      <div id="otherIssueBox" class="hidden">
-        <label for="otherIssue">Please describe the issue</label>
-        <textarea id="otherIssue" name="Other Issue"></textarea>
-      </div>
+<label>Phone</label>
+<input type="tel" name="Phone">
 
-      <label for="gasSmell">2. Do you smell gas near the fireplace?</label>
-      <select id="gasSmell" name="Gas Smell Near Fireplace">
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-        <option value="Not sure">Not sure</option>
-      </select>
+<label>Email</label>
+<input type="email" name="Email">
 
-      <label for="age">3. Approximately how old is the fireplace?</label>
-      <select id="age" name="Approximate Fireplace Age">
-        <option value="Less than 10 years">Less than 10 years</option>
-        <option value="10-20 years">10–20 years</option>
-        <option value="20+ years">20+ years</option>
-        <option value="Not sure">Not sure</option>
-      </select>
+<label>1. What issue are you experiencing?</label>
+<select id="issue" name="Issue" onchange="toggleOther()">
 
-      <label for="lastService">4. When was the last time the fireplace was serviced?</label>
-      <select id="lastService" name="Last Fireplace Service">
-        <option value="Less than 1 year ago">Less than 1 year ago</option>
-        <option value="1-3 years ago">1–3 years ago</option>
-        <option value="More than 3 years ago">More than 3 years ago</option>
-        <option value="Not sure">Not sure</option>
-      </select>
+<option>Fireplace not turning on</option>
+<option>Weak or uneven flame</option>
+<option>Gas smell</option>
+<option>Strange noise from fireplace</option>
+<option>Other</option>
 
-      <label for="issueStart">5. When did the issue start?</label>
-      <select id="issueStart" name="When Issue Started">
-        <option value="Recently">Recently</option>
-        <option value="A few weeks ago">A few weeks ago</option>
-        <option value="A few months ago">A few months ago</option>
-        <option value="Long time">Long time</option>
-      </select>
+</select>
 
-      <label for="fireplaceType">6. What type of fireplace do you have?</label>
-      <select id="fireplaceType" name="Fireplace Type">
-        <option value="Gas fireplace">Gas fireplace</option>
-        <option value="Wood burning fireplace">Wood burning fireplace</option>
-        <option value="Electric fireplace">Electric fireplace</option>
-        <option value="Not sure">Not sure</option>
-      </select>
+<div id="otherBox" class="hidden">
 
-      <button type="submit">Submit Intake Form</button>
-    </form>
+<label>Please describe the issue</label>
+<textarea name="Other Issue"></textarea>
 
-    <div class="note">
-      Dr. Chimney pre-appointment intake form
-    </div>
-  </div>
+</div>
 
-  <script>
-    function toggleOtherIssue() {
-      var select = document.getElementById("issue");
-      var box = document.getElementById("otherIssueBox");
-      box.style.display = select.value === "Other" ? "block" : "none";
-    }
-  </script>
+<label>2. Do you smell gas near the fireplace?</label>
+<select name="Gas Smell">
+
+<option>Yes</option>
+<option>No</option>
+<option>Not sure</option>
+
+</select>
+
+<label>3. Approximately how old is the fireplace?</label>
+<select name="Fireplace Age">
+
+<option>Less than 10 years</option>
+<option>10-20 years</option>
+<option>20+ years</option>
+<option>Not sure</option>
+
+</select>
+
+<label>4. When was the last time the fireplace was serviced?</label>
+<select name="Last Service">
+
+<option>Less than 1 year ago</option>
+<option>1-3 years ago</option>
+<option>More than 3 years ago</option>
+<option>Not sure</option>
+
+</select>
+
+<label>5. When did the issue start?</label>
+<select name="Issue Start">
+
+<option>Recently</option>
+<option>A few weeks ago</option>
+<option>A few months ago</option>
+<option>Long time</option>
+
+</select>
+
+<label>6. What type of fireplace do you have?</label>
+<select name="Fireplace Type">
+
+<option>Gas fireplace</option>
+<option>Wood burning fireplace</option>
+<option>Electric fireplace</option>
+<option>Not sure</option>
+
+</select>
+
+<button type="submit">Submit Intake Form</button>
+
+</form>
+
+</div>
+
+<script>
+
+function toggleOther(){
+
+var select=document.getElementById("issue");
+var box=document.getElementById("otherBox");
+
+if(select.value==="Other"){
+box.style.display="block";
+}
+else{
+box.style.display="none";
+}
+
+}
+
+</script>
+
 </body>
 </html>
